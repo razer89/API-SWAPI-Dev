@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+$font: "Montserrat", sans-serif;
+
+body {
+	margin: 0;
+	background-image: url("../imgs/star-wars-bg.jpg");
+	background-size: cover;
+	background-position: center, center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-family: $font;
+}
+
+.main-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	p {
+		color: #ffd23f;
+		font-size: 1.25rem;
+	}
+}
+
+.search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1.25rem auto;
+	#xterName {
+		width: 400px;
+		height: 40px;
+		padding: 0 10px;
+		border: none;
+		border-color: #ffd23f;
+		border-radius: 2px;
+		font-size: 1rem;
+		margin-bottom: 1.25rem;
+	}
+	#submitBtn {
+		background-color: #ffd23f;
+		border: none;
+		height: 40px;
+		width: 125px;
+		font-size: 0.95rem;
+		font-weight: bold;
+		border-radius: 2px;
+		&:hover {
+			cursor: pointer;
+			background-color: #0e0f38;
+			color: #ffd23f;
+		}
+	}
+}
+
+.character_container {
+	width: 85%;
+	height: 500px;
+	border: 2px solid #ffd23f;
+	border-radius: 10px;
+	margin: 0.5rem auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	// display: flex;
+	// flex-direction: row;
+	// align-items: center;
+	// justify-content: center;
+	// flex-wrap: wrap;
+}
+
+.xterCard {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	width: 275px;
+	height: 175px;
+	gap: 10px;
+	margin: 2rem auto;
+	text-align: center;
+	color: #ffd23f;
+}
+
+.name {
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.attribute {
+	color: #fff;
+}
+
+.query_container {
+	max-width: 85%;
+	max-height: 500px;
+	border: 2px solid #ffd23f;
+	border-radius: 10px;
+	margin: 0.5rem auto;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.queryCard {
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+	width: 400px;
+	height: 200px;
+	gap: 10px;
+	margin: 5rem auto;
+	text-align: center;
+	color: #ffd23f;
+	font-size: 1.25rem;
+}
